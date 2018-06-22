@@ -22,7 +22,7 @@ router.get("/ayannasoleil", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/nomascus", function(req, res){
-  Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, bgarticles){
+  Article.find({"author.id": "5b2c6a0d8b62dd37acc447cb"}, function(err, bgarticles){
         if(err) {
             console.log(err);
         } else {

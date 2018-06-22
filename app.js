@@ -26,8 +26,7 @@ var contactRoutes      = require("./routes/contact");
 
 
 //MIDDLEWARE
-mongoose.connect("mongodb://LThomas92:lawrence12@ds127783.mlab.com:27783/mindofamillennial");
-
+mongoose.connect(process.env.DATABASEURL);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
