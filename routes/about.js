@@ -11,7 +11,7 @@ router.get("/", function(req, res){
  
 //SHOW PAGE -- Show profiles
 router.get("/ayannasoleil", function(req, res){
-    Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, asarticles){
+    Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, asarticles){
         if(err) {
             console.log(err);
         } else {
@@ -22,7 +22,7 @@ router.get("/ayannasoleil", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/nomascus", function(req, res){
-  Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, bgarticles){
+  Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, bgarticles){
         if(err) {
             console.log(err);
         } else {
@@ -33,7 +33,7 @@ router.get("/nomascus", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/ralphieblack", function(req, res){
- Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, ctarticles){
+ Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, ctarticles){
         if(err) {
             console.log(err);
         } else {
@@ -44,7 +44,7 @@ router.get("/ralphieblack", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/gindiesel", function(req, res){
-  Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, dparticles){
+  Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, dparticles){
         if(err) {
             console.log(err);
         } else {
@@ -55,7 +55,7 @@ router.get("/gindiesel", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/hotshot", function(req, res){
-   Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, ebarticles){
+   Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, ebarticles){
         if(err) {
             console.log(err);
         } else {
@@ -66,7 +66,7 @@ router.get("/hotshot", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/law92", function(req, res){
-   Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, ltarticles){
+   Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, ltarticles){
         if(err) {
             console.log(err);
         } else {
@@ -77,7 +77,7 @@ router.get("/law92", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/bachi", function(req, res){
-   Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, rcarticles){
+   Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, rcarticles){
         if(err) {
             console.log(err);
         } else {
@@ -88,7 +88,7 @@ router.get("/bachi", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/tbent92", function(req, res){
-   Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, tbarticles){
+   Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, tbarticles){
         if(err) {
             console.log(err);
         } else {
@@ -99,7 +99,7 @@ router.get("/tbent92", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/wackodestroyer", function(req, res){
-   Article.find({"author.id": "5b21cb4798c05b28059b9fbf"}, function(err, kharticles){
+   Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, kharticles){
         if(err) {
             console.log(err);
         } else {
