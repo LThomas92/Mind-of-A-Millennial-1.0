@@ -10,6 +10,7 @@ var nodemailer            = require("nodemailer");
 var passport              = require("passport");
 var LocalStrategy         = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
+var mongodb               = require('mongodb');
 var User                  = require("./models/user");
 var Article               = require("./models/articles");
 var Comment               = require("./models/comment");
@@ -26,7 +27,21 @@ var contactRoutes      = require("./routes/contact");
 
 
 //MIDDLEWARE
-mongoose.connect("mongodb://LThomas92:lawrence12@ds127783.mlab.com:27783/mindofamillennial");
+var MongoClient = mongodb.MongoClient;
+var url= process.env.DATABASESURL;
+
+MongoClient.connect(url, function (err, db) {
+  if (err) {
+    console.log('Unable to connect to the mongoDB server. Error:', err);
+  } else {
+    console.log('Connection established to', url);
+
+    // do some work here with the database.
+
+    //Close connection
+    db.close();
+  }
+});
 
 
 app.use(bodyParser.urlencoded({extended: true}));
