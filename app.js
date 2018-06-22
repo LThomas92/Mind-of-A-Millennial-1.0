@@ -26,7 +26,7 @@ var contactRoutes      = require("./routes/contact");
 
 
 //MIDDLEWARE
-var url = process.env.DATABASEURL
+var url = process.env.DATABASEURL;
 mongoose.connect(url);
 
 
