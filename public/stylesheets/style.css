@@ -1,0 +1,269 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)
+    ), url("/images/background_MoM_.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: #464646;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	height: 100%;
+}
+
+h1{
+    font-weight: 800;
+}
+
+p {
+    font-weight: 500;
+}
+
+/*================================================================== */
+/*================================================================== */
+
+/* NAV BAR */
+nav {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar-default {
+    background: none;
+	border: none;
+}
+
+#homecolor {
+    color: #FFFFFF;
+}
+
+ .nav.navbar-nav li a {
+    color: #FFFFFF;
+ }
+ 
+  .nav.navbar-nav li a:hover {
+    color: #24BBCB;
+ }
+ 
+ .nav.navbar-nav.navbar-left li a {
+    color: #FFFFFF;
+ }
+ 
+#dropdown-menu-bgcolor {
+    background: black;
+    border: none;
+}
+ 
+.icon-color {
+    color:#FFFF00;
+} 
+ 
+/* NAV BAR */
+
+/*================================================================== */
+/*================================================================== */
+
+/*================================================================== */
+/*================================================================== */
+
+/*FOOTER */
+.footer {
+  background: none;
+  padding: 10px 0;
+  bottom: 0;
+}
+
+.footer a {
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px;
+  transition: all .5s ease;
+}
+
+.footer a:hover {
+  color: #00ACED;
+  cursor: pointer;
+}
+/*FOOTER */
+
+/*================================================================== */
+/*================================================================== */
+
+/*================================================================== */
+/*================================================================== */
+
+/*LANDING PAGE*/
+
+#title {
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 5%
+}
+
+#brand-image{
+    padding-top: 10%;
+}
+
+.new-article-btn { 
+    width: 50%;
+    margin: 0 auto;
+} 
+
+/* LANDING PAGE*/
+
+/*================================================================== */
+/*================================================================== */
+
+/*================================================================== */
+/*================================================================== */
+
+/* LOGIN PAGE*/
+
+.text-color {
+    color: black;
+}
+
+/* LOGIN PAGE*/
+
+/*================================================================== */
+/*================================================================== */
+
+/* ABOUT US SHOW-PAGE */
+
+.profile_img{
+    float: right;
+}
+
+.img1 .img2 .img3 .img4 .img5 .img6 {
+    float: left;
+    margin-bottom: 20px;
+}
+
+/*ABOUT US SHOW-PAGE */
+
+/*================================================================== */
+/*================================================================== */
+
+/*ARTICLE-SHOW PAGE*/
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#container-text {
+    color: black;
+}
+
+#delete-form {
+    display: inline;
+}
+
+/*ARTICLE-SHOW PAGE*/
+
+/*================================================================== */
+/*================================================================== */
+
+/*================================================================== */
+/*================================================================== */
+
+/* NEW ARTICLE PAGE */
+#editor-container {
+  height: 130px;
+}
+
+.content-field{
+    width: 100%;
+}
+
+/* NEW ARTICLE PAGE */
+
+/*================================================================== */
+/*================================================================== */
+
+/*================================================================== */
+/*================================================================== */
+
+
+/* PROFILE PAGE */ 
+
+.profile_img p {
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.sm-links{
+    font-size: 20px;
+    color: white;
+}
+
+.sm-links a {
+   color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.sm-links a:hover {
+  color: #70726F;
+  cursor: pointer;
+}
+
+/* PROFILE PAGE */ 
+
+/*================================================================== */
+/*================================================================== */
+
+/*================================================================== */
+/*================================================================== */
+
+/* CONFIRMATION PAGE */ 
+
+.fa-check {
+    color:green;
+    font-size: 60px;
+}
+
+.confirm-wrap{
+    margin: 0 auto;
+    background: white;
+    color: black;
+    border: 2px solid green;
+}
+
+.confirm-wrap p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CONFIRMATION PAGE */ 
+
+/*================================================================== */
+/*================================================================== */
+
+/*================================================================== */
+/*================================================================== */
+
+/* FORGOT PAGE */
+.forgot-password{
+    font-size:36px;
+    color: white;
+}
+/* FORGOT PAGE */
+
+/*================================================================== */
+/*================================================================== */
+
+

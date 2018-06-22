@@ -1,0 +1,60 @@
+<% include ../partials/header %>
+
+<div class ="container">
+        <div class="col-md-9">
+        <h1 class="text-center">@Hotshot</h1>
+        <hr>
+        <div class="thumbnail">
+        <img src="/images/img-1-EB.jpg">
+        </div>
+        <h4>Errol Braithwaite</h4>
+        <h6>Writer</h6>
+        <p>As a thoroughbred Queens, New York native. Errol Braithwaite or simply ‘E,’ fell in love with sports, music, humor and the arts at a young age. Graduating from St. John’s University with his BA in Psychology and currently pursuing an MBA with a concentration in Finance. Errol has never stopped looking for ways to shatter his comfort zone and pursue growth in all forms, height included.</p> 
+        <p>Over the years, he’s grown to become somewhat of an expert at identifying amazing bars, both of the lyrical and alcoholic variety. Proficient in the 3 W’s (women, weed and whiskey), E saves lives by day, and tells dad jokes by night.</p>
+    
+         <p>Professional Gremlin</p>
+    
+         <p>Part Time Tattoo and Sneaker Enthusiast</p>
+        <p class="sm-links">Follow me on <a href="https://twitter.com/_____hotshot" target="_blank"><i class="fa fa-twitter"></i></a>  <a href="https://www.instagram.com/___hotshot" target="_blank"><i class="fa fa-instagram"></i></a> <a href="https://www.snapchat.com/add/eswindles" target="_blank"><i class="fa fa-snapchat"></i></a>
+        <hr>
+         <div class="container">
+                <h4>My Most Recent Articles</h4>
+                <!-- if user of this page owns the article created display their articles here-->
+                <div class="row">
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=ebarticles[0]._id %>">
+                            <img src="<%=ebarticles[0].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>  
+            
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=ebarticles[1]._id %>">
+                            <img src="<%=ebarticles[1].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+                       
+                       <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=ebarticles[2]._id %>">
+                            <img src="<%=ebarticles[2].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+        </div>
+        </div>
+        
+        <div class="container">
+        <div class ="col-md-3">
+            <!-- GOOGLE ADS -->
+        </div>
+        </div>

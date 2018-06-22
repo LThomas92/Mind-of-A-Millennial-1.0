@@ -1,0 +1,56 @@
+<% include ../partials/header %>
+
+    <div class ="container">
+        <div class="col-md-9">
+        <h1 class="text-center">@Nomascus</h1>
+        <hr>
+        <div class="thumbnail">
+        <img src="/images/img-2-BG.JPG">
+        </div>
+        <h4>Brian Gibbons</h4>
+        <h6>Writer</h6>
+         <p>The token white guy.</p>
+        <p class="sm-links">Follow me on <a href="https://www.twitter.com/nomascus" target="_blank"><i class="fa fa-twitter"></i></a></p>
+        <hr>
+          <div class="container">
+                <h4>My Most Recent Articles</h4>
+                <!-- if user of this page owns the article created display their articles here-->
+                <div class="row">
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=bgarticles[0]._id %>">
+                            <img src="<%=bgarticles[0].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>  
+            
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=bgarticles[1]._id %>">
+                            <img src="<%=bgarticles[1].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+                       
+                       <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=bgarticles[2]._id %>">
+                            <img src="<%=bgarticles[2].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+        </div>
+        </div>
+        
+        <div class="container">
+        <div class ="col-md-3">
+            <!-- GOOGLE ADS -->
+        </div>
+        </div>
+

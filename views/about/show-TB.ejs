@@ -1,0 +1,59 @@
+<% include ../partials/header %>
+
+
+<div class ="container">
+        <div class="col-md-9">
+        <h1 class="text-center">@TBent92</h1>
+        <hr>
+        <div class="thumbnail">
+        <img src="/images/img-1-TB.jpeg">
+        </div>
+        <h4>Travis Bent</h4>
+        <h6>Writer</h6>
+        <p>Born and raised in Queens, NY <i>(Yerrr)</i>. Travis Bent fell in love with sports before he could walk. He played high school baseball at Cardozo in Bayside, NY then began coaching in college. Travis recently interned for the New York Athletic Club in Manhattan, where he wrote for the Winged Foot Magazine. Covering numerous sports including basketball, boxing, soccer and track & field.</p>
+        <p>The 25 year old is of Jamaican descent. He moved to Long Island, NY in 2016, where he holds a Residential Counselor position with Long Island Lutheran High School, working with international students from China, Egypt, Puerto Rico and more. Travis is a 2015 graduate of St. John’s University, where he studied Sports Management and Communications.</p>
+         <p class="sm-links">Follow me on <a href="https://www.instagram.com/tbent_92" target="_blank"><i class="fa fa-instagram"></i></a> <a href="http://linkedin.com/in/travis-bent-351b8b58" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://www.snapchat.com/add/tbent_92" target="_blank"><i class="fa fa-snapchat"></i></a> <a href="https://www.facebook.com/tbent819" target="_blank"><i class="fa fa-facebook"></i></a>  </p>
+        <hr>
+            <div class="container">
+                <h4>My Most Recent Articles</h4>
+                <!-- if user of this page owns the article created display their articles here-->
+                <div class="row">
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=tbarticles[0]._id %>">
+                            <img src="<%=tbarticles[0].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>  
+            
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=tbarticles[1]._id %>">
+                            <img src="<%=tbarticles[1].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+                       
+                       <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=tbarticles[2]._id %>">
+                            <img src="<%=tbarticles[2].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+        </div>
+        </div>
+        
+        <div class="container">
+        <div class ="col-md-3">
+            <!-- GOOGLE ADS -->
+        </div>
+        </div>
+
+

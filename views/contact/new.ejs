@@ -1,0 +1,43 @@
+<% include ../partials/header %>
+
+
+
+<!-- CONTACT FORM -->
+		<div class="container">
+		<div class="row">
+		<div style="width: 30%; margin: 25px auto;">
+		<form action ="/contact" method ="POST" id ="form-text" role ="form">
+		<h1 class="text-center" id="contact-title">Contact Us</h2>
+		<div class ="form-group">
+		<label for ="nameInput">Name</label>
+		<input type="text" class="form-control" id="nameInput" name ="name" placeholder="Enter your name" required="required">
+		</div>
+
+		<div class ="form-group">
+		<label for ="emailInput">Email</label>
+		<input type="email" class="form-control" id="emailInput" name = "email" placeholder="Enter your email" required="required">
+		</div>
+
+		<div class="form-group">
+	    <label for="Message">Your Message</label>
+	    <textarea required="required" class="form-control" id="message" name ="message" rows="10"></textarea>
+	  	</div>
+		<button type="submit" class="btn btn-primary center-block">Submit</button>
+		</form>
+		</div>
+		</div>
+
+	<!-- CONTACT FORM -->
+
+
+
+
+
+
+
+
+
+
+
+
+<% include ../partials/footer %>

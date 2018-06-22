@@ -1,0 +1,58 @@
+<% include ../partials/header %>
+
+<div class ="container">
+        <div class="col-md-9">
+        <h1 class="text-center">@GinDiesel</h1>
+        <hr>
+        <div class="thumbnail">
+        <img src="/images/img-2-DB.jpeg">
+        </div>
+        <h4>Dane Pierre</h4>
+        <h6>Writer</h6>
+         <p>“Family, friends, fitness, the future”</p>
+        <p>Dane, 26, is a New York native that currently lives in Elmont, NY. He loves strength training, sports and his newfound passion — traveling. In 2014, he earned his B.A in Speech Pathology & Audiology from St. John’s University. Since then, he has been working as a production accountant in Manhattan. Dane aims to go on to earn his Juris Doctorate in 2021.</p>
+        <p>During his time at St. John’s, Dane met his fellow co-contributors while on the winning end of many one-sided pick up basketball games. Egos were bruised, but obviously the friendships endured, nonetheless. Dane is a firm believer that it’s great when you make it, but it’s better when you do it with the homies.</p>
+        <p class="sm-links">Follow me on </i></a>  <a href="https://www.instagram.com/dep_24" target="_blank"><i class="fa fa-instagram"></i></a>  <a href="https://www.snapchat.com/add/dep_24" target="_blank"><i class="fa fa-snapchat"></i></a> </p>
+        <hr>
+         <div class="container">
+                <h4>My Most Recent Articles</h4>
+                <!-- if user of this page owns the article created display their articles here-->
+                <div class="row">
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=dparticles[0]._id %>">
+                            <img src="<%=dparticles[0].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>  
+            
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=dparticles[1]._id %>">
+                            <img src="<%=dparticles[1].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+                       
+                       <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=dparticles[2]._id %>">
+                            <img src="<%=dparticles[2].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+        </div>
+        </div>
+        
+        <div class="container">
+        <div class ="col-md-3">
+            <!-- GOOGLE ADS -->
+        </div>
+        </div>
+

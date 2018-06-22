@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<img class="center-block" id="brand-image" alt="Website Logo" src="/images/Landing_Page_Logo.png">
+
+<em><h1 id="title" class="text-center">"The People's Opinion on Pop Culture"</em></h1>
+</div>
+</div>
+
+
+
+ <% if(currentUser && currentUser.isWriter){ %>
+      <p class="new-article-btn"><a class="btn btn-success btn-md center-block" href="/articles/new">Add New Article</a></p>
+        <% }  %>
+
+</div>
+
+<% include partials/footer %>

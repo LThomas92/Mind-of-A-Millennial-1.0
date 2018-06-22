@@ -1,0 +1,59 @@
+<% include ../partials/header %>
+
+
+<div class ="container">
+        <div class="col-md-9">
+        <h1 class="text-center">@law92</h1>
+        <hr>
+        <div class="thumbnail">
+        <img src="/images/img-2-LT.JPG">
+        </div>
+        <h4>Lawrence Thomas</h4>
+        <h6>Founder | Writer</h6>
+         <p>Lawrence Thomas better known as "Law" hailing from the greatest state in America, where the "timbs" are unlaced and the bodega is always open. A man of many talents always looking to learn more. Graduating from St. John's University with his BS in Mass Communications. A self taught full stack web developer what that means in English is that he loves to build websites.</p>
+         <p>Not much of a talker, more of an observer. Law has always been filled with ambition. His unique take on different topics will be one to be desired. He's capable of disagreeing with the <strong>popular</strong> opinion and yes he is here for the <i>"static".</i></p>
+         <p>Stay tuned for the content!</p>
+        <p class="sm-links">Follow me on </i></a>  <a href="https://www.instagram.com/_law92" target="_blank"><i class="fa fa-instagram"></i></a> <a href="https://www.twitter.com/_law92" target="_blank"><i class="fa fa-twitter"></i></a>  <a href="https://www.snapchat.com/add/kinglau92" target="_blank"><i class="fa fa-snapchat"></i></a> </p>
+        <hr>
+        <div class="container">
+                <h4>My Most Recent Articles</h4>
+                <!-- if user of this page owns the article created display their articles here-->
+                <div class="row">
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=ltarticles[0]._id %>">
+                            <img src="<%=ltarticles[0].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>  
+            
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=ltarticles[1]._id %>">
+                            <img src="<%=ltarticles[1].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+                       
+                       <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=ltarticles[2]._id %>">
+                            <img src="<%=ltarticles[2].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+        </div>
+        </div>
+        
+        <div class="container">
+        <div class ="col-md-3">
+            <!-- GOOGLE ADS -->
+        </div>
+        </div>
+

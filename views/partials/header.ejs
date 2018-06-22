@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mind of A Millennial</title>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=rjadl5gyw4unfkgc83yjhwi2r89t35m1z43bun15yohisplr"></script>
+		<script>
+	    tinymce.init({
+	        selector: ".content-field",
+	        plugins: [
+        "advlist autolink autoresize lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu imagetools wordcount tinymcespellchecker powerpaste"
+    ],
+    		spellchecker_language: 'en',
+    		image_caption: true,
+    		toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+		     width : "640",
+		     default_link_target: "_blank",
+		     link_context_toolbar: true,
+		     link_assume_external_targets: true,
+		     image_dimensions: false,
+        	image_class_list: [
+            {title: 'Responsive', value: 'img-responsive'}
+        ]
+	    });
+	</script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+	<!-- NAVIGATION BAR -->
+
+		<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="/" id="homecolor" class="navbar-brand">Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="/about">Who Are We?</a></li>
+					<li><a href="/contact/new">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/articles">Articles</a></li>
+				<% if(!currentUser){ %>
+					<li><a href="/login">Login</a></li>
+					<li><a href="/register">Sign up</a></li>
+				<%	} else { %>
+					<li><a>Signed in as <%=currentUser.username %> <i class="fa fa-user icon-color"></i></a></li>
+					<li><a href="/logout">Logout</a></li>
+			<%		} %>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class ="container">
+		<% if(error && error.length > 0){ %>
+		<div class="alert alert-danger" role="alert"><%=error %>
+		</div>
+	<% } %>
+	<% if(success && success.length > 0){ %>
+	<div class="alert alert-success" role="alert"><%=success %>
+	</div>
+	<% } %>
+	
+	</div>
+	
+

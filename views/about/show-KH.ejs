@@ -1,0 +1,58 @@
+<% include ../partials/header %>
+    
+    <div class ="container">
+        <div class="col-md-9">
+        <h1 class="text-center">@wackodestroyer</h1>
+        <hr>
+        <div class="thumbnail">
+        <img src="/images/img-2-KH.jpeg">
+        </div>
+        <h4>Keith Haywood</h4>
+        <h6>Writer</h6>
+         <p>Known as <strong>“The Greatest Drinker of this Generation”</strong>, Keith Haywood was born and raised in New Orleans, LA and is a full time thinker, critic and lover of women while somehow doubling as a full time glutton and professional binger. Graduating from St. John’s University with a major in Government and Politics and a minor in Philosophy, he has always possessed a mind as complex as the topics he chooses to discuss. Whether the topic is literature, music, art, sports or the core beliefs (or lack thereof) of life, Keith is always prepared to give a complete and easily digestible thought on a topic with relevant context to help wash it down.</p>
+
+        <p>Unfortunately, just like with women, if the topic isn’t interesting to him then he’ll have nothing to say. So enjoy the content because he loves to put on a show.</p>
+        <p class="sm-links">Follow me on </i></a>  <a href="https://www.instagram.com/wackodestroyer" target="_blank"><i class="fa fa-instagram"></i></a> <a href="https://www.twitter.com/therealkhj" target="_blank"><i class="fa fa-twitter"></i></a>  <a href="https://www.snapchat.com/add/therealkhj" target="_blank"><i class="fa fa-snapchat"></i></a> </p>
+        <hr>
+        <div class="container">
+                <h4>My Most Recent Articles</h4>
+                <!-- if user of this page owns the article created display their articles here-->
+                <div class="row">
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=kharticles[0]._id %>">
+                            <img src="<%=kharticles[0].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>  
+            
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=kharticles[1]._id %>">
+                            <img src="<%=kharticles[1].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+                       
+                       <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=kharticles[2]._id %>">
+                            <img src="<%=kharticles[2].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+        </div>
+        </div>
+        <div class="container">
+        <div class ="col-md-3">
+            <!-- GOOGLE ADS -->
+        </div>
+        </div>
+
+

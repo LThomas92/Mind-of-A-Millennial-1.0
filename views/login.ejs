@@ -1,0 +1,22 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+    <h1 style="text-align: center">Sign In</h1>
+    <div style="width: 30%; margin: 25px auto;">
+    <form action="/login" method="POST">
+      <div class="form-group">
+    <input class="form-control" required="required" type="text" name="username" placeholder="Enter your Username">
+        </div>
+        <div class="form-group">
+        <input class="form-control" required="required" type="password" name="password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-md btn-success btn-block">Sign In!</button>
+                </div>
+            </form>
+   <span> <a class="btn btn-primary pull-left"href="/">Go Back</a><a class="btn btn-primary pull-right"href="/forgot">Forgot Password?</a></span>
+    </div>
+    </div>
+
+<% include partials/footer %>

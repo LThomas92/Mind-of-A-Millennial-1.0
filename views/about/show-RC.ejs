@@ -1,0 +1,58 @@
+<% include ../partials/header %>
+        
+<div class ="container">
+        <div class="col-md-9">
+        <h1 class="text-center">@Bachi</h1>
+        <hr>
+        <div class="thumbnail">
+        <img src="/images/img-1-RC.jpeg">
+        </div>
+        <h4>Ron Oakes-Cunningham</h4>
+        <h6>Writer</h6>
+       <p>Ron Oakes-Cunningham, more notoriously  known as "bachi", knows he's dope. That should scare you. When he was 5 his fav movie was The Gremlins, ain't got shit to do with this but he thought he should mention.</p>
+       <p>He's an <strong>amalgam</strong> of legal analysis and hip-hop lyrics. He believes he's unguardeble and so should you. He recently began to use the word nigga, and hates vegans because they've caused an inflation in the cost for healthy food. He cares less about your think pieces and more about seeing his homies make it.</p>
+       <p>Put differently: this nigga don't care</p>
+         <p class="sm-links">Follow me on <a href="https://www.snapchat.com/add/bachi14" target="_blank"><i class="fa fa-snapchat"></i></a></p>
+        <hr>
+           <div class="container">
+                <h4>My Most Recent Articles</h4>
+                <!-- if user of this page owns the article created display their articles here-->
+                <div class="row">
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=rcarticles[0]._id %>">
+                            <img src="<%=rcarticles[0].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>  
+            
+                <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=rcarticles[1]._id %>">
+                            <img src="<%=rcarticles[1].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+                       
+                       <% for(let i = 0; i < 1; i++) { %>
+                        <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="/articles/<%=rcarticles[2]._id %>">
+                            <img src="<%=rcarticles[2].image %>">
+                            </a>
+                            </div>
+                            </div>
+                       <%  }; %>
+        </div>
+        </div>
+        <div class="container">
+        <div class ="col-md-3">
+            <!-- GOOGLE ADS -->
+        </div>
+        </div>
+
+
