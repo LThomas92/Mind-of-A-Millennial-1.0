@@ -26,8 +26,8 @@ var contactRoutes      = require("./routes/contact");
 
 
 //MIDDLEWARE
-//mongoose.connect("mongodb://localhost/mind_of_mil");
-mongoose.connect("process.env.DATABASEURL");
+var url = process.env.DATABASEURL || "mongodb://localhost/mind_of_mil"
+mongoose.connect(url);
 
 
 app.use(bodyParser.urlencoded({extended: true}));
