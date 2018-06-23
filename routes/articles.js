@@ -97,7 +97,6 @@ router.get("/:id", function(req, res){
 });
 
 router.get("/:id/edit", middleware.checkArticleOwnership, function(req, res){
-    console.log("IN EDIT!");
     //find the article with provided ID
     Article.findById(req.params.id, function(err, foundArticle){
         if(err){
@@ -127,6 +126,7 @@ router.put("/:id", upload.single('image'), function(req, res){
               }
             }
             article.name = req.body.name;
+            article.imgSource = req.body.imgSource
             article.content = req.body.content;
             article.save();
             req.flash("success","Successfully Updated!");
