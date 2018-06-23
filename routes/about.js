@@ -88,7 +88,7 @@ router.get("/bachi", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/tbent92", function(req, res){
-   Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, tbarticles){
+   Article.find({"author.id": "5b2c6c648b62dd37acc447ce"}, function(err, tbarticles){
         if(err) {
             console.log(err);
         } else {
