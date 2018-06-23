@@ -13,6 +13,12 @@ router.get("/", function(req, res){
     res.render("landing");
 });
 
+//privacy policy route
+router.get("/privacy", function(req, res){
+    res.render("privacy-policy.html");
+});
+
+
 //register form
 router.get("/register", function(req, res){
    res.render("register"); 
