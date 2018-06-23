@@ -18,6 +18,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
+    "express-sslify": "^1.2.0",
     "formidable": "^1.2.1",
     "method-override": "^2.3.10",
     "moment": "^2.22.1",

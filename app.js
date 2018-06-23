@@ -10,6 +10,8 @@ var nodemailer            = require("nodemailer");
 var passport              = require("passport");
 var LocalStrategy         = require("passport-local");
 var passportLocalMongoose = require("passport-local-mongoose");
+var http                  = require('http');
+var enforce               = require('express-sslify');
 var User                  = require("./models/user");
 var Article               = require("./models/articles");
 var Comment               = require("./models/comment");
@@ -33,6 +35,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
 app.use(methodOverride("_method"));
 app.use(flash());
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 //PASSPORT CONFIGURATION 
 app.use(require("express-session")({
