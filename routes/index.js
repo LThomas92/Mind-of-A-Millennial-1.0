@@ -13,11 +13,9 @@ router.get("/", function(req, res){
     res.render("landing");
 });
 
-//privacy policy route
-router.get("/privacy", function(req, res){
-    res.render("privacy-policy.html");
+router.get("/privacy", function(req, res) {
+   res.render("privacy"); 
 });
-
 
 //register form
 router.get("/register", function(req, res){
