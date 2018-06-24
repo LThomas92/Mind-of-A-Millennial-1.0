@@ -11,7 +11,7 @@ router.get("/", function(req, res){
  
 //SHOW PAGE -- Show profiles
 router.get("/ayannasoleil", function(req, res){
-    Article.find({"author.id": "5b2c6a0d8b62dd37acc447cb"}, function(err, asarticles){
+    Article.find({"author.id": "5b2c6c178b62dd37acc447cd"}, function(err, asarticles){
         if(err) {
             console.log(err);
         } else {
@@ -33,7 +33,7 @@ router.get("/nomascus", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/ralphieblack", function(req, res){
- Article.find({"author.id": "5b2c6a0d8b62dd37acc447cb"}, function(err, ctarticles){
+ Article.find({"author.id": "5b2c6b4f8b62dd37acc447cc"}, function(err, ctarticles){
         if(err) {
             console.log(err);
         } else {
@@ -66,7 +66,7 @@ router.get("/hotshot", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/law92", function(req, res){
-   Article.find({"author.id": "5b2c6a0d8b62dd37acc447cb"}, function(err, ltarticles){
+   Article.find({"author.id": "5b2c37e0fc01a522683b6027"}, function(err, ltarticles){
         if(err) {
             console.log(err);
         } else {
