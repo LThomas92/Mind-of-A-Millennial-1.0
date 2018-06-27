@@ -55,7 +55,7 @@ router.get("/gindiesel", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/hotshot", function(req, res){
-   Article.find({"author.id": "5b2c6a0d8b62dd37acc447cb"}, function(err, ebarticles){
+   Article.find({"author.id": "5b2c6cef8b62dd37acc447d0"}, function(err, ebarticles){
         if(err) {
             console.log(err);
         } else {
