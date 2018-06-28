@@ -21,7 +21,7 @@
                     <hr>
                     <p><%-article.content %></p>
                     <p>
-                        <strong>Written By <a href="#"><%=article.author.username%></a></strong> , <%=moment(article.submittedAt).fromNow()%>
+                        <strong>Written By <a href="/about/<%=article.author%>"><%=article.author.username%></a></strong> , <%=moment(article.submittedAt).fromNow()%>
                     </p>
                     <% if(currentUser && article.author.id.equals(currentUser._id)) { %>
                     <a class="btn btn-warning" href ="/articles/<%=article._id %>/edit">Edit</a>
