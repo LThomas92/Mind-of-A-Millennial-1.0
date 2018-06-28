@@ -20,7 +20,7 @@
             <% articles.forEach(function(article){ %>
             <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
-                   <img src="<%=article.image %>">
+                   <img id="index-img" src="<%=article.image %>">
                    <div class="caption">
                     <h4><a href="/articles/<%= article._id %>"><%=article.title%></a></h4>
                     <p><%=moment(article.submittedAt).fromNow()%></p>
