@@ -44,7 +44,7 @@ router.get("/ralphieblack", function(req, res){
 
 //SHOW PAGE -- Show profiles
 router.get("/gindiesel", function(req, res){
-  Article.find({"author.id": "5b2c6a0d8b62dd37acc447cb"}, function(err, dparticles){
+  Article.find({"author.id": "5b2c7a65d27c4b0014a993a2"}, function(err, dparticles){
         if(err) {
             console.log(err);
         } else {
