@@ -108,5 +108,17 @@ router.get("/wackodestroyer", function(req, res){
     });
 });
 
+//SHOW PAGE -- Show profiles
+router.get("/mlope", function(req, res){
+   Article.find({"author.id": "5b2c6c178b62dd37acc447cd"}, function(err, mlarticles){
+        if(err) {
+            console.log(err);
+        } else {
+        res.render("about/show-ML", {mlarticles:mlarticles});
+        }
+    });
+});
+
+
 
 module.exports = router;
