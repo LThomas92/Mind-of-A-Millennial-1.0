@@ -1,3 +1,0 @@
-RewriteRule ^(.*)$ https://%{mindofmillennial.com}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ https://www.%{mindofmillennial.com}%{REQUEST_URI} [L,R=301]
